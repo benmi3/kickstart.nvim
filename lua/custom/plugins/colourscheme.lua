@@ -33,8 +33,27 @@ return {
           types = {},
           operators = {},
         },
-      color_overrides = {},
-      custom_highlights = {},
+      color_overrides = {
+          --all = {
+          --  text = "#ffffff",
+          --},
+          latte = {
+              base = "#ff0000",
+              mantle = "#242424",
+              crust = "#474747",
+          },
+          frappe = {},
+          macchiato = {},
+          mocha = {},
+        },
+      custom_highlights = function(colors)
+          return {
+            Comment = { fg = colors.pink },
+            TabLineSel = { bg = colors.surface2 },
+            CmpBorder = { fg = colors.surface2 },
+            Pmenu = { bg = colors.none },
+          }
+        end,
       integrations = {
         cmp = true,
         gitsigns = true,
