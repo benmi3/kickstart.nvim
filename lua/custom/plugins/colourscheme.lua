@@ -48,7 +48,7 @@ return {
         },
       custom_highlights = function(colors)
           return {
-            Comment = { fg = colors.pink },
+            Comment = { fg = colors.sky },
             TabLineSel = { bg = colors.surface2 },
             CmpBorder = { fg = colors.surface2 },
             Pmenu = { bg = colors.none },
